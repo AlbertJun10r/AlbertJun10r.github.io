@@ -498,11 +498,11 @@ span{
 /* Responsive Design for Education */
 @media(max-width: 991px){
     .education{
-        padding: 8rem 3% 8rem;
+        padding: 9rem 1% 8rem;
     }
     
     .timeline-items::before{
-        left: 7px;
+        left: 6px;
     }
     
     .timeline-item:nth-child(odd){
@@ -520,15 +520,21 @@ span{
     }
     
     .timeline-content{
-        padding: 2.5rem 3rem;
+        padding: 2.5rem 1rem;
     }
     
     .timeline-icon {
-        top: -10px;
+        top: 19px;
         left: 15px !important;
         right: auto !important;
         width: 40px;
         height: 40px;
+    }
+
+    .timeline-content h3, 
+    .timeline-content h4, 
+    .timeline-content p {
+        left: 15px;
     }
     
     .timeline-icon i {
@@ -669,7 +675,7 @@ span{
 
 .services-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
     gap: 3rem;
     align-items: stretch;
     margin-top: 3rem;
@@ -788,9 +794,11 @@ span{
     font-weight: 400;
     line-height: 1.8;
     color: rgba(255, 255, 255, 0.8);
-    text-align: center;
     transition: color 0.3s ease-in-out;
     margin: 0;
+    text-align: left; 
+    line-height: 1.6;  
+    color: #d1d1d1;   
 }
 
 .services-box:hover .services-info p {
